@@ -42,7 +42,7 @@
             document.getElementById("callDetails").innerHTML = '';
             document.getElementById("callDetails").innerHTML += 'Button click time: ' + new Date(buttonClickTime).toISOString() + '<br/>';
             let settings = {
-                "url": "http://appiumtestpoc.herokuapp.com/appium/makePhoneCall",
+                "url": "https://appiumtestpoc.herokuapp.com/appium/makePhoneCall",
                 "method": "POST",
                 "timeout": 0,
                 "headers": {
@@ -67,7 +67,7 @@
         
         function checkTestCallByID(data) {
             let settings = {
-                "url": "http://appiumtestpoc.herokuapp.com/appium/getTestCallByID?testCallID="+data,
+                "url": "https://appiumtestpoc.herokuapp.com/appium/getTestCallByID?testCallID="+data,
                 "method": "GET",
                 "timeout": 0,
                 "headers": {
@@ -84,7 +84,7 @@
 
         function saveFinalResponseTime(data) {
             let settings = {
-                "url": "http://appiumtestpoc.herokuapp.com/appium/saveFinalResponseTime?testCallID="+data,
+                "url": "https://appiumtestpoc.herokuapp.com/appium/saveFinalResponseTime?testCallID="+data,
                 "method": "POST",
                 "timeout": 0,
                 "headers": {
